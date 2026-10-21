@@ -1,0 +1,7 @@
+@function px-to-vh($px, $base-height: 1080) {
+  @return calc(($px / $base-height) * 100vh);
+}
+
+@mixin vh($property, $px, $base-height: 1080) {
+  #{$property}: px-to-vh($px, $base-height);
+}

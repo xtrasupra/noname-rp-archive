@@ -1,0 +1,16 @@
+node_modules/
+bin/
+obj/
+.vs/
+.idea/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.user
+*.suo
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db

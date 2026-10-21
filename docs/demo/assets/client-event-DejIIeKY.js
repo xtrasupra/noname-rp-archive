@@ -1,0 +1,1 @@
+function e(e,...t){let n=globalThis.mp;if(typeof n?.trigger==`function`){n.trigger(e,...t);return}n?.events?.call(e,...t)}export{e as t};

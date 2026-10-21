@@ -1,0 +1,1 @@
+var e=[{id:1,state:`character`,character:{id:94168,firstName:`Mark`,lastName:`Payne`,cash:82837.38,bank:5756.89,role:`player`,level:28,organization:null,lastOnline:`20.10.2020`,totalOnlineTime:14512}},{id:2,state:`locked`,lockedByFirstName:`Alex`,lockedByLastName:`Carter`,lockReason:`Нарушение правил сервера`,lockedFor:`2 дня 4 часа`},{id:3,state:`notPurchased`}];export{e as t};
