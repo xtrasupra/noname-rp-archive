@@ -823,7 +823,7 @@ function buildHudPayload(player, character) {
     },
 
     server: {
-      name: "Twinkle RP - TEST",
+      name: "NoName RP - TEST",
       online: mp.players.length,
       maxOnline: Number(mp.config?.maxplayers || 1000),
     },

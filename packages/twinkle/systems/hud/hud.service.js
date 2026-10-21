@@ -202,7 +202,7 @@ function build(player) {
         server: {
             online: `${mp.players.length} / ${mp.config.maxplayers}`,
             x2: false,
-            logo: "/tw.png"
+
         },
 
         player: {

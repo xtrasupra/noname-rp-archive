@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-const PROJECT_NAME = "Twinkle RP";
+const PROJECT_NAME = "NoName RP";
 const SERVER_IP = process.env.SERVER_IP || "127.0.0.1:22005";
 const SERVER_ONLINE = process.env.SERVER_ONLINE || "2000";
 const DISCORD_URL = process.env.DISCORD_URL || "https://discord.gg/twinkle";

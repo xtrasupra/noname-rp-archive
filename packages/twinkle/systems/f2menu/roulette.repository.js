@@ -60,8 +60,8 @@ function mapSettlementResult(row) {
     replayed: true,
     resultText: `x${resultMultiplier}`,
     message: win
-      ? `Вы выиграли ${winAmount} Twinkle Coin.`
-      : `Выпало x${resultMultiplier}. Вы проиграли ${bet} Twinkle Coin.`,
+      ? `Вы выиграли ${winAmount} NoName Coin.`
+      : `Выпало x${resultMultiplier}. Вы проиграли ${bet} NoName Coin.`,
   };
 }
 

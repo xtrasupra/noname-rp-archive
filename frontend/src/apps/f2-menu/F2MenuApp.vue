@@ -3,8 +3,6 @@
     <section class="f2-menu__content" aria-label="F2 меню">
       <aside class="f2-menu__sidebar">
         <header class="f2-menu__profile">
-          <img class="f2-menu__logo" src="/tw.png" alt="Twinkle RP">
-
           <div class="f2-menu__profile-text">
             <strong>{{ playerName }}</strong>
             <span>{{ playerTitle }}</span>
@@ -486,7 +484,7 @@ const playerName = computed(() => {
       ?? payload?.player?.name
       ?? payload?.character?.name
       ?? payload?.character?.fullName
-      ?? 'TWINKLE RP'
+      ?? 'NONAME RP'
   )
 })
 

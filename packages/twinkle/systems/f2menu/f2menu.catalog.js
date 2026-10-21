@@ -13,7 +13,7 @@ const REWARD_IMAGE = "/f2/items/reward.png";
 const F2_CASES = [
   {
     id: "twinkle-basic",
-    title: "Twinkle Case",
+    title: "NoName Case",
     description: "Базовый кейс с валютой, предметами и стартовыми бонусами.",
     price: 150,
     tone: "default",

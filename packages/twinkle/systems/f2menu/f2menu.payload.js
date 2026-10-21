@@ -64,7 +64,7 @@ function getCharacterName(character, player) {
 function getF2PlayerTitle(player, character, fractionName, jobName) {
   if (playerAdminLevel(player) > 0) return "Администратор";
   if (fractionName && fractionName !== "Нет") return fractionName;
-  return jobName || character?.jobName || character?.job_name || "Игрок Twinkle";
+  return jobName || character?.jobName || character?.job_name || "Игрок NoName";
 }
 
 async function queryRows(sql, params = []) {

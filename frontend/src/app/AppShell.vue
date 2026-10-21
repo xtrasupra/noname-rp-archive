@@ -6,7 +6,7 @@ const isArchiveDemo = import.meta.env.MODE === 'demo'
 <template>
   <div class="browser-shell" :class="{ 'archive-demo': isArchiveDemo }">
     <InterfaceHost />
-    <a v-if="isArchiveDemo" class="archive-back" href="../index.html" aria-label="К обзору Twinkle" title="К обзору Twinkle">↩</a>
+    <a v-if="isArchiveDemo" class="archive-back" href="../index.html" aria-label="К обзору NoName RP" title="К обзору NoName RP">↩</a>
   </div>
 </template>
 

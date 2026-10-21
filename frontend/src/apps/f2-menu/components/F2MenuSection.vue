@@ -34,7 +34,7 @@ const sections: Record<SectionKey, { description: string, headline: string, titl
   },
   shop: {
     description: 'Раздел для премиум-предметов, услуг и покупок аккаунта.',
-    headline: 'Магазин Twinkle RP',
+    headline: 'Магазин NoName RP',
     title: 'Магазин',
   },
   miniGames: {

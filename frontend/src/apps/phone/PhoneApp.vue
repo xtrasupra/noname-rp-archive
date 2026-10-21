@@ -25,7 +25,7 @@ const dialNumber = ref('')
 const phoneSection = ref<PhoneSection>('keypad')
 const selectedContactId = ref<number | null>(null)
 
-const operatorName = computed(() => props.payload?.operator ?? 'Twinkle Mobile')
+const operatorName = computed(() => props.payload?.operator ?? 'NoName Mobile')
 const tariffName = computed(() => props.payload?.tariff ?? 'Pro Max')
 const balance = computed(() => props.payload?.balance ?? 12850)
 const formattedBalance = computed(() => new Intl.NumberFormat('ru-RU').format(balance.value))
@@ -69,12 +69,12 @@ const phoneContacts = [
   { id: 1, name: 'Алекс Картер', phone: '+7 900 120-30-40', accent: 'blue' },
   { id: 2, name: 'Механик', phone: '+7 900 555-12-34', accent: 'orange' },
   { id: 3, name: 'Диспетчер', phone: '+7 900 777-81-81', accent: 'purple' },
-  { id: 4, name: 'Twinkle Mobile', phone: '+7 900 000-00-00', accent: 'green' },
+  { id: 4, name: 'NoName Mobile', phone: '+7 900 000-00-00', accent: 'green' },
 ]
 
 const messageThreads = [
   { id: 1, name: 'Банк', preview: 'Пополнение счета выполнено', time: '12:21', unread: 2, accent: 'green' },
-  { id: 2, name: 'Twinkle Mobile', preview: 'Баланс обновлен, пакет услуг активен', time: '10:04', unread: 0, accent: 'blue' },
+  { id: 2, name: 'NoName Mobile', preview: 'Баланс обновлен, пакет услуг активен', time: '10:04', unread: 0, accent: 'blue' },
   { id: 3, name: 'Алекс', preview: 'Встречаемся у парковки', time: 'Вчера', unread: 0, accent: 'orange' },
   { id: 4, name: 'Такси Premium', preview: 'Водитель ожидает у входа', time: 'Пн', unread: 1, accent: 'purple' },
 ]
@@ -415,7 +415,7 @@ function closePhoneContact() {
                   <li class="phone-row">
                     <span class="phone-avatar phone-avatar--message"></span>
                     <div>
-                      <strong>Twinkle Mobile</strong>
+                      <strong>NoName Mobile</strong>
                       <span>Баланс обновлен, пакет услуг активен</span>
                     </div>
                     <time>10:04</time>

@@ -1,5 +1,4 @@
 import type { HudChatMessage, HudPayload } from '@/shared/contracts/ui'
-import logo from './assets/images/logo.png'
 
 const battleServerTime = new Date()
 const battleExpiredAt = new Date(battleServerTime.getTime() + 15 * 60 * 1000)
@@ -57,7 +56,7 @@ export const hudFixture: HudPayload = {
   server: {
     online: '1000 / 2000',
     x2: true,
-    logo,
+
   },
   player: {
     needs: {
@@ -94,7 +93,6 @@ export const hudFixture: HudPayload = {
         type: 'yellow',
         title: 'Теперь я водитель',
         description: 'Краткое описание задания',
-        image: 'https://cdn.twinkle-rp.ru/hud/tasks/driver.webp',
         progress: {
           steps: 2,
           activeStep: 1,
@@ -105,7 +103,6 @@ export const hudFixture: HudPayload = {
         type: 'red',
         title: 'Акция',
         description: 'Отыграй 7 часов чтобы получить Автомобиль',
-        image: 'https://cdn.twinkle-rp.ru/hud/promotions/car.webp',
       },
     ],
   },

@@ -146,7 +146,7 @@ const NEWCOMER_QUEST = Object.freeze({
   id: NEWCOMER_QUEST_ID,
   version: NEWCOMER_QUEST_VERSION,
   title: "Дорожная карта новичка",
-  description: "Освойте основы Twinkle: получите документы, посетите магазины, поработайте, оформите лицензию и купите первый автомобиль.",
+  description: "Освойте основы игрового мира: получите документы, посетите магазины, поработайте, оформите лицензию и купите первый автомобиль.",
   steps: Object.freeze([
     {
       id: "starter_documents",

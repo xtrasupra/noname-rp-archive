@@ -75,7 +75,7 @@ onBeforeUnmount(() => window.clearInterval(timer))
     <section class="shell">
       <header>
         <span class="logo"><HardHat /></span>
-        <div class="title"><small>Twinkle Mining Co.</small><h1>Снаряжение шахтёра</h1></div>
+        <div class="title"><small>NoName Mining Co.</small><h1>Снаряжение шахтёра</h1></div>
         <div class="profile"><b>LVL {{ profile?.level ?? 1 }}</b><span>{{ profile?.levelName ?? 'Стажёр' }}</span><em>{{ profile?.xp ?? 0 }} XP</em></div>
         <button class="close" type="button" @click="close"><X /></button>
       </header>

@@ -111,7 +111,7 @@ onBeforeUnmount(() => {
       <header class="school-header">
         <div class="school-brand">
           <div>
-            <p>Автошкола Twinkle</p>
+            <p>Автошкола NoName</p>
             <h1>{{ phase === 'study' ? 'Изучение теории' : 'Экзамен категории B' }}</h1>
           </div>
         </div>

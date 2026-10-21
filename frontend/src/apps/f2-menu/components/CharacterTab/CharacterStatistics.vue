@@ -172,7 +172,7 @@ const blockHistory: BlockHistoryEntry[] = [
     date: '12.05.2026, 21:10',
     duration: '2 часа',
     reason: 'Флуд в общий чат',
-    issuedBy: 'Helper Twinkle',
+    issuedBy: 'Helper NoName',
     role: 'Старший хелпер',
     status: 'expired',
   },

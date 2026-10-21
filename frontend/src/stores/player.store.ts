@@ -4,7 +4,7 @@ import type { PlayerState } from '@/shared/types/game'
 
 const initialState: PlayerState = {
   id: 1,
-  name: 'Twinkle Dev',
+  name: 'Archive Dev',
   ping: 24,
   locale: 'ru',
   authenticated: true,

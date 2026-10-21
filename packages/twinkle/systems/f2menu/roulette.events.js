@@ -111,7 +111,7 @@ function validateBet(amount, multiplier) {
   }
 
   if (amount > MAX_BET) {
-    return `Максимальная ставка ${MAX_BET} Twinkle Coin.`;
+    return `Максимальная ставка ${MAX_BET} NoName Coin.`;
   }
 
   if (!MULTIPLIERS.includes(multiplier)) {
@@ -209,7 +209,7 @@ async function settleRouletteBet(identity, requestId, amount, selectedMultiplier
       if (donateBefore < amount) {
         throw new RouletteError(
           "insufficient_funds",
-          "Недостаточно Twinkle Coin.",
+          "Недостаточно NoName Coin.",
           donateBefore
         );
       }
@@ -306,8 +306,8 @@ function buildSuccessPayload(requestId, amount, selectedMultiplier, settlement) 
     replayed: settlement.replayed,
     resultText: `x${settlement.resultMultiplier}`,
     message: settlement.win
-      ? `Вы выиграли ${settlement.winAmount} Twinkle Coin.`
-      : `Выпало x${settlement.resultMultiplier}. Вы проиграли ${amount} Twinkle Coin.`,
+      ? `Вы выиграли ${settlement.winAmount} NoName Coin.`
+      : `Выпало x${settlement.resultMultiplier}. Вы проиграли ${amount} NoName Coin.`,
   };
 }
 

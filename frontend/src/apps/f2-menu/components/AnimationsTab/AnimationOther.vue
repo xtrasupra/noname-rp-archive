@@ -48,7 +48,7 @@
 
         <div v-for="entry in history" :key="entry.id" class="roulette-history__item">
           <span :style="{ background: entry.color }">{{ entry.label }}</span>
-          <p>- ставка {{ entry.amount }} Twinkle Coin</p>
+          <p>- ставка {{ entry.amount }} NoName Coin</p>
         </div>
       </aside>
     </div>

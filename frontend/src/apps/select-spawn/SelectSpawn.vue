@@ -1,9 +1,6 @@
 <template>
   <div class="select-spawn">
     <div class="select-spawn__container">
-      <div class="select-spawn__logo">
-        <img src="/tw.png" alt="logotype">
-      </div>
 
       <div class="select-spawn-bottom__name">
         <button

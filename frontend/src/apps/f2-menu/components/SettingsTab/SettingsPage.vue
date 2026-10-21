@@ -129,7 +129,7 @@
             <SettingToggle v-model="settings.chat.tradeFilter" label="Фильтр торговли" description="Скрывать частые торговые объявления." />
           </section>
           <section class="settings-chat-preview">
-            <span>[20:42] Helper Twinkle: Добро пожаловать на сервер.</span>
+            <span>[20:42] Helper NoName: Добро пожаловать на сервер.</span>
             <span>[20:43] Вы получили новое уведомление.</span>
             <span>[20:44] Игрок рядом начал взаимодействие.</span>
           </section>

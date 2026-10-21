@@ -18,7 +18,7 @@ function getOnlinePayload() {
         server: {
             online: `${mp.players.length} / ${Number(mp.config.maxplayers || 1000)}`,
             x2: true,
-            logo: "/tw.png",
+
         },
         info: {
             ...hud.getClockPayload(),

@@ -259,7 +259,7 @@ async function handleRequest(req, res) {
         if (req.method === "GET" && url.pathname === "/health") {
             sendJson(res, 200, {
                 ok: true,
-                name: "Twinkle RP RAGE Bridge",
+                name: "NoName RP RAGE Bridge",
                 online: mp.players.length,
                 uptime: process.uptime(),
                 tempMapBlips: tempMapBlips.size,

@@ -132,7 +132,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
         <div class="station-brand">
           <span class="station-brand__mark"><Fuel /></span>
           <div>
-            <span class="eyebrow">ЗАПРАВКА TWINKLE</span>
+            <span class="eyebrow">ЗАПРАВКА NONAME</span>
             <h1>{{ business.name }}</h1>
             <p><MapPin /> {{ business.district }}</p>
           </div>

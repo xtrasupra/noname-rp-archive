@@ -156,7 +156,7 @@ onBeforeUnmount(() => {
           <span class="brand-card__icon"><component :is="shopIcon" /></span>
           <div>
             <span class="eyebrow">{{ businessTypeLabel }}</span>
-            <h1>{{ business?.name || 'Магазин Twinkle' }}</h1>
+            <h1>{{ business?.name || 'Магазин NoName' }}</h1>
             <p>{{ business?.district || 'Лос-Сантос' }}</p>
           </div>
         </div>

@@ -176,7 +176,7 @@ watch(
         <span class="brand__mark"><Wrench /></span>
         <div>
           <strong>LS CUSTOMS</strong>
-          <small>Тюнинг-ателье Twinkle</small>
+          <small>Тюнинг-ателье NoName</small>
         </div>
       </div>
 

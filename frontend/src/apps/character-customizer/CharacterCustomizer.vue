@@ -13,9 +13,6 @@
       />
 
       <div class="creator__container" :class="{ 'creator__container--blocked': activePickerConfig }">
-        <div class="creator__logo">
-          <img src="/tw.png" alt="logotype">
-        </div>
 
         <h2 class="creator__title">{{ activeTabLabel }}</h2>
 
@@ -429,7 +426,6 @@
       <div class="creator-form">
         <div class="creator-form__panel">
           <div class="creator-screen-form__title">
-          <img class="creator-form__icon" src="/tw.png" alt="logotype">
           <h1 class="creator-form__title">Выбор никнейма</h1>
 
           <span class="creator-form__text">Выберите имя и фамилию, чтобы начать.<br>

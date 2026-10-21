@@ -25,14 +25,8 @@ const money = (value?: number) =>
         <span v-if="server?.x2" class="hud-server-info__multiplier">X2</span>
         <div class="hud-server-info__brand">
           <div class="hud-server-info__wordmark">
-            <b>TWINKLE</b><small>ROLE PLAY</small>
+            <b>NONAME</b><small>ROLE PLAY</small>
           </div>
-          <img
-            v-if="server?.logo"
-            class="hud-server-info__logo"
-            :src="server.logo"
-            alt="Twinkle"
-          />
         </div>
       </div>
 
@@ -146,13 +140,6 @@ const money = (value?: number) =>
   display: flex;
   align-items: center;
   gap: px-to-vh(10);
-}
-
-.hud-server-info__logo {
-  width: px-to-vh(50);
-  aspect-ratio: 1;
-  flex: none;
-  object-fit: contain;
 }
 
 .hud-server-info__wordmark {

@@ -8,8 +8,6 @@
   <div v-else class="auth-page">
     <div class="auth-card">
       <div class="auth-card__head">
-        <img class="auth-card__logo" src="/tw.png" alt="Twinkle RP">
-
         <h1 class="auth-card__title">{{ title }}</h1>
 
         <p class="auth-card__subtitle">
@@ -192,8 +190,8 @@ const subtitle = computed(() => {
   }
 
   return isLoginMode.value
-    ? 'Добро пожаловать на Twinkle RP. Перед началом войдите в аккаунт.'
-    : 'Добро пожаловать на Twinkle RP. Перед началом создайте аккаунт.'
+    ? 'Добро пожаловать на NoName RP. Перед началом войдите в аккаунт.'
+    : 'Добро пожаловать на NoName RP. Перед началом создайте аккаунт.'
 })
 
 const createInitialForm = () => ({

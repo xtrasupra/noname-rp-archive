@@ -2,8 +2,6 @@
   <div class="recovery-page">
     <div class="recovery-card">
       <div class="recovery-card__head">
-        <img class="recovery-card__logo" src="/tw.png" alt="Twinkle RP">
-
         <h1 class="recovery-card__title">Восстановление аккаунта</h1>
 
         <p class="recovery-card__subtitle">

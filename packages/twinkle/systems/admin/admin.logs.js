@@ -97,7 +97,7 @@ async function sendDiscordLog(type, message) {
     const embed = new Discord.MessageEmbed()
       .setDescription(String(message).slice(0, 4000) || "Без описания")
       .setColor(config.discordColor)
-      .setFooter("TwinkleLogs")
+      .setFooter("ArchiveLogs")
       .setTimestamp();
 
     await channel.send(embed);

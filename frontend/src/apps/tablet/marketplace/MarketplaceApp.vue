@@ -243,7 +243,7 @@ watch(
     <aside class="marketplace-sidebar" aria-label="Навигация маркетплейса">
       <div class="marketplace-brand">
         <div>
-          <strong>Twinkle Market</strong>
+          <strong>NoName Market</strong>
           <span>Игровая торговая площадка</span>
         </div>
       </div>
