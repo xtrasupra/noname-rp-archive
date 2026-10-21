@@ -14,3 +14,4 @@ build/
 *.log
 .DS_Store
 Thumbs.db
+client_packages/cef/

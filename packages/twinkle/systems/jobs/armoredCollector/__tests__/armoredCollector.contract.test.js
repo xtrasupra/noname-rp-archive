@@ -198,7 +198,7 @@ test("settlement is locked, idempotent and the shared NPC owns the dispatcher pe
 });
 
 test("collector persistence stays in the canonical twinkledb dump", () => {
-  const schema = read("db/twinkledb.sql");
+  const schema = read("database/schema.sql");
   const mainDatabaseEnd = schema.indexOf("-- Current Database: `twinkle_admin`");
   const mainDatabase = mainDatabaseEnd >= 0 ? schema.slice(0, mainDatabaseEnd) : schema;
 

@@ -13,7 +13,7 @@ function read(relativePath) {
 
 test("jail service owns an unqualified main-database table and both commands", () => {
   const service = read("packages/twinkle/systems/admin/jail.service.js");
-  const dump = read("db/twinkledb.sql");
+  const dump = read("database/schema.sql");
 
   assert.match(service, /CREATE TABLE IF NOT EXISTS jail_sentences/);
   assert.doesNotMatch(service, /twinkle_admin\.jail_sentences/);

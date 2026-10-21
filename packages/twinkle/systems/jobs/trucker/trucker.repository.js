@@ -260,7 +260,7 @@ function ensureSchema() {
       const available = new Set((columns || []).map((column) => String(column.Field)));
       const missing = expected.filter((column) => !available.has(column));
       if (missing.length) {
-        throw new Error(`SQL contract mismatch in ${table}: missing ${missing.join(", ")}. Import the current db/twinkledb.sql.`);
+        throw new Error(`SQL contract mismatch in ${table}: missing ${missing.join(", ")}. Import the current database/schema.sql.`);
       }
     }
     const statusColumns = await db.query("SHOW COLUMNS FROM `trucker_orders` LIKE 'status'");
@@ -313,7 +313,7 @@ function ensureSchema() {
       !String(generated.EXTRA || "").toUpperCase().includes("STORED GENERATED") ||
       expression !== expectedExpression
     ) {
-      throw new Error("SQL contract mismatch in trucker_rentals: active_character_uuid must be the expected STORED GENERATED column. Import the current db/twinkledb.sql.");
+      throw new Error("SQL contract mismatch in trucker_rentals: active_character_uuid must be the expected STORED GENERATED column. Import the current database/schema.sql.");
     }
     const rentalIndexes = await db.query("SHOW INDEX FROM `trucker_rentals` WHERE Key_name = 'uq_trucker_rentals_one_active'");
     const activeUniqueIndex = rentalIndexes?.[0];
@@ -322,7 +322,7 @@ function ensureSchema() {
       Number(activeUniqueIndex?.Non_unique) !== 0 || Number(activeUniqueIndex?.Seq_in_index) !== 1 ||
       String(activeUniqueIndex?.Column_name) !== "active_character_uuid" || activeUniqueIndex?.Sub_part != null
     ) {
-      throw new Error("SQL contract mismatch in trucker_rentals: uq_trucker_rentals_one_active is missing or invalid. Import the current db/twinkledb.sql.");
+      throw new Error("SQL contract mismatch in trucker_rentals: uq_trucker_rentals_one_active is missing or invalid. Import the current database/schema.sql.");
     }
   }).catch((error) => {
     schemaPromise = null;

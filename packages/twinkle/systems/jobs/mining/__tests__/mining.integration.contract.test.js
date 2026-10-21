@@ -10,8 +10,8 @@ const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), "u
 
 test("client loader and CEF registries include both mining interfaces", () => {
   const loader = read("client_packages/loader.js");
-  const appIndex = read("TwinkleFront-main/src/apps/index.ts");
-  const uiContracts = read("TwinkleFront-main/src/shared/contracts/ui.ts");
+  const appIndex = read("frontend/src/apps/index.ts");
+  const uiContracts = read("frontend/src/shared/contracts/ui.ts");
   const interfaceLock = read("client_packages/events/interfaceLock.js");
 
   assert.match(loader, /\.\/events\/jobs\/mining\.js/);
@@ -93,7 +93,7 @@ test("startup helpers remain compatible with the embedded RAGE runtime", () => {
 });
 
 test("canonical twinkledb dump contains only the three mining tables", () => {
-  const schema = read("db/twinkledb.sql");
+  const schema = read("database/schema.sql");
   const names = [...schema.matchAll(/CREATE TABLE `?(mining_[a-z_]+)`?/g)].map((match) => match[1]);
   assert.deepEqual(names.sort(), ["mining_cargo", "mining_entitlements", "mining_profiles"]);
   assert.match(schema, /UNIQUE KEY `uq_mining_cargo_key`/);
@@ -149,7 +149,7 @@ test("warehouse, transferable rentals and rebuilt QTE keep their anti-dup contra
   const inventory = read("packages/twinkle/systems/inventory/inventory.service.js");
   const inventoryEvents = read("packages/twinkle/systems/inventory/inventory.events.js");
   const uiLoader = read("client_packages/events/ui/ui.loader.js");
-  const challengeSource = read("TwinkleFront-main/src/apps/mining-challenge/MiningChallengeApp.vue");
+  const challengeSource = read("frontend/src/apps/mining-challenge/MiningChallengeApp.vue");
   const builtFiles = fs.readdirSync(path.join(root, "client_packages/cef/assets"));
   const builtChallengeJs = builtFiles.find((name) => /^MiningChallengeApp-.*\.js$/.test(name));
   const builtChallengeCss = builtFiles.find((name) => /^MiningChallengeApp-.*\.css$/.test(name));

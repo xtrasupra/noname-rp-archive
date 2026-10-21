@@ -13,13 +13,13 @@ const files = {
   schoolClient: read("client_packages/events/drivingSchool/drivingSchool.js"),
   schoolConfig: read("packages/twinkle/systems/drivingSchool/drivingSchool.config.js"),
   schoolServer: read("packages/twinkle/systems/drivingSchool/drivingSchool.server.js"),
-  schoolUi: read("TwinkleFront-main/src/apps/driving-school/DrivingSchoolApp.vue"),
-  truckerUi: read("TwinkleFront-main/src/apps/tablet/trucker/TruckerApp.vue"),
-  rentalUi: read("TwinkleFront-main/src/apps/trucker-rental/TruckerRentalApp.vue"),
+  schoolUi: read("frontend/src/apps/driving-school/DrivingSchoolApp.vue"),
+  truckerUi: read("frontend/src/apps/tablet/trucker/TruckerApp.vue"),
+  rentalUi: read("frontend/src/apps/trucker-rental/TruckerRentalApp.vue"),
   npcConfig: read("packages/twinkle/systems/npcDialog/npcDialog.config.js"),
   npcServer: read("packages/twinkle/systems/npcDialog/npcDialog.server.js"),
   adminFly: read("client_packages/events/admin/adminFly.js"),
-  interfaceContracts: read("TwinkleFront-main/src/shared/contracts/ui.ts"),
+  interfaceContracts: read("frontend/src/shared/contracts/ui.ts"),
   interfaceLock: read("client_packages/events/interfaceLock.js"),
 };
 

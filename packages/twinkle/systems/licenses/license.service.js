@@ -433,7 +433,7 @@ function ensureLicenseSchema() {
 
         if (invalidColumns.length || !hasExpectedUniqueIndex) {
           throw new Error(
-            `character_licenses schema is incompatible; import the current db/twinkledb.sql (columns: ${invalidColumns.join(", ") || "ok"}, unique index: ${hasExpectedUniqueIndex ? "ok" : "invalid"}).`
+            `character_licenses schema is incompatible; import the current database/schema.sql (columns: ${invalidColumns.join(", ") || "ok"}, unique index: ${hasExpectedUniqueIndex ? "ok" : "invalid"}).`
           );
         }
       })

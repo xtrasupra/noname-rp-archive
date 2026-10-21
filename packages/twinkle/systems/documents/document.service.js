@@ -178,7 +178,7 @@ function ensureDocumentSchema() {
 
         if (invalidColumns.length || !hasExpectedUniqueIndex) {
           throw new Error(
-            `character_documents schema is incompatible; import the current db/twinkledb.sql (columns: ${invalidColumns.join(", ") || "ok"}, unique index: ${hasExpectedUniqueIndex ? "ok" : "invalid"}).`
+            `character_documents schema is incompatible; import the current database/schema.sql (columns: ${invalidColumns.join(", ") || "ok"}, unique index: ${hasExpectedUniqueIndex ? "ok" : "invalid"}).`
           );
         }
       })

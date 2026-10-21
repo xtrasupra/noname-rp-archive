@@ -80,8 +80,8 @@ test("NPC, loader, interfaces, inventory and canonical twinkledb are wired", () 
   assert.match(read("packages/twinkle/systems/npcDialog/npcDialog.config.js"), /label: "Открыть магазин"/);
   assert.match(read("packages/twinkle/systems/inventory/inventory.items.js"), /forestry_secret_saw_trophy/);
   assert.match(read("client_packages/loader.js"), /events\/jobs\/forestry\.js/);
-  assert.match(read("TwinkleFront-main/src/shared/contracts/ui.ts"), /forestryChallenge/);
-  const schema = read("db/twinkledb.sql");
+  assert.match(read("frontend/src/shared/contracts/ui.ts"), /forestryChallenge/);
+  const schema = read("database/schema.sql");
   assert.match(schema, /CREATE TABLE `forestry_profiles`/);
   assert.match(schema, /CREATE TABLE `forestry_entitlements`/);
   assert.match(schema, /CREATE TABLE `forestry_cargo`/);

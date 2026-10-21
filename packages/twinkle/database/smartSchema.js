@@ -48,7 +48,7 @@ const SYSTEM_TABLES = new Set([
   "sys",
 ]);
 
-// Tables owned by the reviewed db/twinkledb.sql contract must never be
+// Tables owned by the reviewed database/schema.sql contract must never be
 // inferred or repaired by Smart DB from runtime query text.
 const MIGRATION_MANAGED_TABLES = new Set([
   "character_documents",

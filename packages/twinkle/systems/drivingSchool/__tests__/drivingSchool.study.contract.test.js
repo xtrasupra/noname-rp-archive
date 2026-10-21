@@ -25,8 +25,8 @@ test("free study is separate from the paid server-authoritative exam", () => {
   const server = read("packages/twinkle/systems/drivingSchool/drivingSchool.server.js");
   const npcConfig = read("packages/twinkle/systems/npcDialog/npcDialog.config.js");
   const npcServer = read("packages/twinkle/systems/npcDialog/npcDialog.server.js");
-  const ui = read("TwinkleFront-main/src/apps/driving-school/DrivingSchoolApp.vue");
-  const contracts = read("TwinkleFront-main/src/shared/contracts/ui.ts");
+  const ui = read("frontend/src/apps/driving-school/DrivingSchoolApp.vue");
+  const contracts = read("frontend/src/shared/contracts/ui.ts");
   const studySource = server.slice(server.indexOf("function openTheoryStudy"), server.indexOf("async function openSchool"));
 
   assert.match(studySource, /mode: "study"/);
