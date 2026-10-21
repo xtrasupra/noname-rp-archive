@@ -1,6 +1,6 @@
 import type { RentCarPayload } from '@/shared/contracts/ui'
 
-const cdn = 'http://83.217.193.115:9001/renders/vehicles'
+const cdn = import.meta.env.BASE_URL + 'vehicles'
 const colors = [
   { colorId: 0, name: 'Чёрный', color: '#0D1117' },
   { colorId: 111, name: 'Белый', color: '#F5F5F7' },
